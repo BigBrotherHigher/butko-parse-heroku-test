@@ -1,0 +1,12 @@
+runtime: nodejs
+vm: true
+
+env_variables:
+  # --REQUIRED--
+  DATABASE_URI: mongodb://butko:123@ds047484.mlab.com:47484/heroku_0wbwc7v0
+  APP_ID: app
+  MASTER_KEY: master
+  # --OPTIONAL--
+  # FILE_KEY: <your-file-key>
+  # PARSE_MOUNT: /parse
+  # CLOUD_CODE_MAIN:  
