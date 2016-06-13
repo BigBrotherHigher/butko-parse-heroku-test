@@ -63,7 +63,7 @@ ParseRequest.postData = function() {
       e.preventDefault();
     });
   });
-  XHR.POST('/parse/classes/GameScore');
+  XHR.POST('/parse/classes/aaaaaaaaaaaaaaaaa');
 }
 
 ParseRequest.getData = function() {
@@ -79,7 +79,7 @@ ParseRequest.getData = function() {
       e.preventDefault();
     })
   });
-  XHR.GET('/parse/classes/GameScore');
+  XHR.GET('/parse/classes/aaaaaaaaaaaaaaaaa');
 }
 
 ParseRequest.postCloudCodeData = function() {
