@@ -131,7 +131,7 @@ XHR.setCallback = function(callback) {
 }
 
 XHR.POST = function(path, callback) {
-  var seed = {"score":1337,"playerName":"Sean Plott","cheatMode":false}
+  var seed = {"score":1337,"playerName":"Sean Plott","cheatMode":false, "objectId":'asdadas'};
   this.xhttp.open("POST", Config.getUrl() + path, true);
   this.xhttp.setRequestHeader("X-Parse-Application-Id", "app");
   this.xhttp.setRequestHeader("Content-type", "application/json");
