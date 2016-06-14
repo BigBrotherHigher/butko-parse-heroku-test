@@ -9,12 +9,26 @@ var _ = require('underscore');
 var dashboard = new ParseDashboard({
     "apps": [
         {
-            "serverURL": "butko-test.herokuapp.com/parse",
+            "serverURL": "http://localhost:1337/parse",
             "appId": "app",
             "masterKey": "master",
             "appName": "MyApp"
+        },
+        {
+            "serverURL": "https://api.parse.com/1", // Hosted on Parse.com
+            "appId": "2rZaNPQ59LLqMwG0dtQa9fOAGiY6NLt4SJcYsopS",
+            "masterKey": "GKwb1cDtLAbdRS24rg5JrlxIzzX9qOs9MjClheLv",
+            "javascriptKey": "lc3M8zaiuviGalsIDvGC7folwkifrEiIfj5rrFDZ",
+            "restKey": "6VktMESqGCbJUumetDbGvRBQNlgcUo5I21Y8D9pz",
+            "appName": "Quizling",
+            "production": false
         }
-    ]
+    ],
+    "users": [
+        {
+            "user":"butko",
+            "pass":"123456"
+        }]
 });
 
 var databaseUri = 'mongodb://butko:123@ds011664.mlab.com:11664/heroku_8j7vlzj9';
@@ -27,7 +41,7 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'app',
   masterKey: process.env.MASTER_KEY || 'master', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'butko-test.herokuapp.com/parse',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
