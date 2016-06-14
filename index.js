@@ -24,12 +24,12 @@ var dashboardConfig = {
             "appName": "Quizling",
             "production": false
         }
-    ],
-    "users": [
-        {
-            "user":"butko",
-            "pass":"123456"
-        }]
+    ]
+    //"users": [
+    //    {
+    //        "user":"butko",
+    //        "pass":"123456"
+    //    }]
 };
 var dashboard = new ParseDashboard(dashboardConfig, dashboardConfig.allowInsecureHTTP);
 
