@@ -3,33 +3,33 @@
 
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
-var ParseDashboard = require('parse-dashboard');
+//var ParseDashboard = require('parse-dashboard');
 var path = require('path');
 var _ = require('underscore');
-var dashboard = new ParseDashboard({
-    "apps": [
-        {
-            "serverURL": "https://butko-test.herokuapp.com/parse",
-            "appId": "app",
-            "masterKey": "master",
-            "appName": "MyApp"
-        },
-        {
-            "serverURL": "https://api.parse.com/1", // Hosted on Parse.com
-            "appId": "2rZaNPQ59LLqMwG0dtQa9fOAGiY6NLt4SJcYsopS",
-            "masterKey": "GKwb1cDtLAbdRS24rg5JrlxIzzX9qOs9MjClheLv",
-            "javascriptKey": "lc3M8zaiuviGalsIDvGC7folwkifrEiIfj5rrFDZ",
-            "restKey": "6VktMESqGCbJUumetDbGvRBQNlgcUo5I21Y8D9pz",
-            "appName": "Quizling",
-            "production": false
-        }
-    ],
-    "users": [
-        {
-            "user":"butko",
-            "pass":"123456"
-        }]
-});
+//var dashboard = new ParseDashboard({
+//    "apps": [
+//        {
+//            "serverURL": "https://butko-test.herokuapp.com/parse",
+//            "appId": "app",
+//            "masterKey": "master",
+//            "appName": "MyApp"
+//        },
+//        {
+//            "serverURL": "https://api.parse.com/1", // Hosted on Parse.com
+//            "appId": "2rZaNPQ59LLqMwG0dtQa9fOAGiY6NLt4SJcYsopS",
+//            "masterKey": "GKwb1cDtLAbdRS24rg5JrlxIzzX9qOs9MjClheLv",
+//            "javascriptKey": "lc3M8zaiuviGalsIDvGC7folwkifrEiIfj5rrFDZ",
+//            "restKey": "6VktMESqGCbJUumetDbGvRBQNlgcUo5I21Y8D9pz",
+//            "appName": "Quizling",
+//            "production": false
+//        }
+//    ],
+//    "users": [
+//        {
+//            "user":"butko",
+//            "pass":"123456"
+//        }]
+//});
 
 var databaseUri = 'mongodb://butko:123@ds011664.mlab.com:11664/heroku_8j7vlzj9';
 
@@ -52,7 +52,7 @@ var api = new ParseServer({
 
 var app = express();
 
-app.use('/dashboard', dashboard);
+//app.use('/dashboard', dashboard);
 
 // Serve static assets from the /public folder
 app.use('/public', express.static(path.join(__dirname, '/public')));
