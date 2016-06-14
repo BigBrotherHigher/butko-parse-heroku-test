@@ -7,6 +7,7 @@ var ParseDashboard = require('parse-dashboard');
 var path = require('path');
 var _ = require('underscore');
 var dashboard = new ParseDashboard({
+    "allowInsecureHTTP": true,
     "apps": [
         {
             "serverURL": "https://butko-test.herokuapp.com/parse",

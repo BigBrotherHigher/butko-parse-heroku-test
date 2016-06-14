@@ -19,7 +19,7 @@
     "underscore": "^1.8.3"
   },
   "scripts": {
-    "start": "node index.js --allowInsecureHTTP=1"
+    "start": "node index.js"
   },
   "engines": {
     "node": ">=4.3"
