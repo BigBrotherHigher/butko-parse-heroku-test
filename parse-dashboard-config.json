@@ -1,4 +1,5 @@
 {
+  "allowInsecureHTTP": true,
   "apps": [
     {
       "serverURL": "http://localhost:1337/parse",
