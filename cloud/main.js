@@ -48,7 +48,6 @@ Parse.Cloud.afterSave("QuestionPersonalStatistics", function(request) {
 Parse.Cloud.define('chargeCard', function(req,res) {
     var Stripe = require('stripe');
     Stripe.initialize('sk_live_yrowO83jtcnUDCpjX1fLApuK');
-
     var token = req.params.token;
 
     var charge = Stripe.Charges.create({
