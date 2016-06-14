@@ -9,7 +9,7 @@ var _ = require('underscore');
 var dashboard = new ParseDashboard({
     "apps": [
         {
-            "serverURL": "http://localhost:1337/parse",
+            "serverURL": "https://butko-test.herokuapp.com/parse",
             "appId": "app",
             "masterKey": "master",
             "appName": "MyApp"
