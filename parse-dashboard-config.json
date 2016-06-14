@@ -1,8 +1,13 @@
 {
-  "allowInsecureHTTP": true,
   "apps": [
     {
       "serverURL": "http://localhost:1337/parse",
+      "appId": "app",
+      "masterKey": "master",
+      "appName": "MyApp"
+    },
+    {
+      "serverURL": "https://butko-test.herokuapp.com",
       "appId": "app",
       "masterKey": "master",
       "appName": "MyApp"
