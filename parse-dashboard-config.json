@@ -6,5 +6,10 @@
       "masterKey": "master",
       "appName": "MyApp"
     }
-  ]
+  ],
+  "users": [
+    {
+      "user":"butko",
+      "pass":"123456"
+    }]
 }
