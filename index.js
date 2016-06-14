@@ -6,7 +6,7 @@ var ParseServer = require('parse-server').ParseServer;
 var ParseDashboard = require('parse-dashboard');
 var path = require('path');
 var _ = require('underscore');
-var dashboard = new ParseDashboard({
+var dashboardConfig = {
     "allowInsecureHTTP": true,
     "apps": [
         {
@@ -30,7 +30,8 @@ var dashboard = new ParseDashboard({
             "user":"butko",
             "pass":"123456"
         }]
-});
+};
+var dashboard = new ParseDashboard(dashboardConfig, dashboardConfig.allowInsecureHTTP);
 
 var databaseUri = 'mongodb://butko:123@ds011664.mlab.com:11664/heroku_8j7vlzj9';
 
