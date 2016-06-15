@@ -42,6 +42,7 @@ var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'app',
+  clientKey: 'client',
   masterKey: process.env.MASTER_KEY || 'master', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'https://butko-test.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
